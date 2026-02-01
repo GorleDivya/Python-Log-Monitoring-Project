@@ -62,9 +62,7 @@ Report exported to report.json
         "ERROR": 37
     },
     "most_frequent_error": {
-        "message": [
-            "Database connection timed out.",
-            "Invalid authentication token.",
+        "message": [logs
                    ],
         "count": 1
     }
