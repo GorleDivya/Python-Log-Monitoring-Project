@@ -12,14 +12,14 @@ Log Monitoring Menu
 Enter choice: 1
 
 Output: 
-Total logs: 150
+Total logs: 148
 
 2. Count per log level
 Enter choice: 2
 
 Output: 
 Log count by level:
-{'INFO': 74, 'WARNING': 37, 'ERROR': 39}
+{'INFO': 74, 'WARNING': 37, 'ERROR': 37}
 
 3. Most frequent ERROR message
 Enter choice: 3
@@ -29,13 +29,13 @@ Most frequent ERROR: (['Database connection timed out.'], 3)
 
 4. Filter logs by time range
 Enter choice: 4
-Enter start time (YYYY-MM-DD HH:MM:SS): 2026-01-19 08:00:33
+Enter start time (YYYY-MM-DD HH:MM:SS): 2026-01-19 08:00:01
 Enter end time (YYYY-MM-DD HH:MM:SS): 2026-01-19 08:04:12
 
-Output: 
+Output:
+2026-01-19 08:00:01 INFO Server initialized successfully.
+2026-01-19 08:00:15 INFO User 'alice' logged in.
 2026-01-19 08:00:33 WARNING High memory usage detected.
-2026-01-19 08:00:52 ERROR Database connection timed out.
-2026-01-19 08:00:52 ERROR Database connection timed out.
 2026-01-19 08:00:52 ERROR Database connection timed out.
 2026-01-19 08:01:10 INFO Background sync started.
 2026-01-19 08:01:27 ERROR Invalid authentication token.
@@ -55,19 +55,19 @@ Output:
 Report exported to report.json
 
 {
-    "total_logs": 150,
+    "total_logs": 148,
     "count_by_level": {
         "INFO": 74,
         "WARNING": 37,
-        "ERROR": 39
+        "ERROR": 37
     },
     "most_frequent_error": {
         "message": [
-            "Database connection timed out."
-        ],
-        "count": 3
+            "Database connection timed out.",
+            "Invalid authentication token.",
+                   ],
+        "count": 1
     }
 }
-
 Enter choice: 6
 Exit
