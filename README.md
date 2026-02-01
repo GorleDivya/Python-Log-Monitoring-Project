@@ -12,11 +12,19 @@ Requirements
 4. Provide a CLI-based menu
 5. Export analytics to a JSON report
 
-Instructions
-1.Ensure sample.log is present in the root directory.
+Instructions 1.Ensure sample.log is present in the root directory. 
 2.Log file is parsed into structured objects
 3.Results are exported to report.json.
 4.Run the application : python main.py
+
+Project Architecture
+├── main.py          # Entry point (orchestrates execution)
+├── cli.py           # Command-line interface
+├── log_reader.py    # Reads and parses log file
+├── analytics.py     # Core analytics logic
+├── utils.py         # Helper functions
+├── sample.log       # Input log file
+└── report.json      # Generated analytics report
 
 
 
