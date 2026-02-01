@@ -1,6 +1,7 @@
 # Python-Log-Monitoring-Project
-Objective
-Python-based log monitoring and analytics tool.
+Objective:
+Build a Python-based log monitoring and analytics tool.
+
 Requirements
 1. Read logs from the file
 2. Identify log levels: INFO, WARNING, ERROR
